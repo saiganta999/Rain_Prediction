@@ -1,19 +1,19 @@
-# Weather Prediction Using Machine Learning
+# WEATHER PREDICTION Using Machine Learning
 
 This project uses Machine Learning to predict whether it will rain the next day based on weather conditions.
 
 ## Dataset
 
-The project uses the **WeatherAUS** dataset, which contains weather information from different locations in Australia.
+The project uses the **weatherAUS** dataset, which contains weather information from different locations in Australia.
 
 * Rows: 145,460
 * Columns: 23
 * Target: `RainTomorrow`
 
-`RainTomorrow` is converted into:
+'RainTomorrow' is converted into:
 
-* `1` → Yes, it will rain
-* `0` → No, it will not rain
+* '1' → Yes, it will rain
+* '0' → No, it will not rain
 
 ## Data Preprocessing
 
@@ -21,29 +21,29 @@ The dataset contains missing values.
 
 The following columns were removed because they had a large number of missing values:
 
-* Evaporation
-* Sunshine
-* Cloud9am
-* Cloud3pm
+1. Evaporation
+2. Sunshine
+3. Cloud9am
+4. Cloud3pm
 
 For the remaining missing values:
 
 * Numerical values were filled using the mean.
 * Categorical values were filled using the most frequent value.
 
-Categorical columns were then converted into numerical values using `LabelEncoder`.
+Categorical columns were then converted into numerical values using 'LabelEncoder'.
 
 ## Machine Learning
 
-Different features such as temperature, rainfall, humidity, wind speed, wind direction and pressure were used to predict `RainTomorrow`.
+Different features such as temperature, rainfall, humidity, wind speed, wind direction and pressure were used to predict 'RainTomorrow'.
 
-A **Random Forest Classifier** was used for the final prediction.
+A "Random Forest Classifier" was used for the final prediction.
 
 ## Result
 
 The Random Forest model achieved approximately:
 
-**Accuracy: 85.01%**
+" Accuracy: 85.01% "
 
 ## Technologies Used
 
@@ -58,7 +58,7 @@ The Random Forest model achieved approximately:
 ## How to Run
 
 1. Clone this repository.
-2. Download/place `weatherAUS.csv` in the project folder.
+2. Download/place ' weatherAUS.csv ' in the project folder.
 3. Open the notebook in Jupyter Notebook, JupyterLab, VS Code, or Google Colab.
 4. Install the required libraries:
 
@@ -70,6 +70,7 @@ pip install numpy pandas matplotlib seaborn scikit-learn
 
 
 ## Project Workflow
+
 Dataset
    ↓
 Data Cleaning
